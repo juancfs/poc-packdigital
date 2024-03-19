@@ -1,0 +1,1 @@
+export {BannerTwo} from './BannerTwo';
