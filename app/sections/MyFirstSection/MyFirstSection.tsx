@@ -1,19 +1,15 @@
-export const MyFirstSection =  ({ cms }: any) => {
+import { Container } from "~/components";
+import { MyFirstSectionCms } from "./MyFirstSection.types";
+import { Schema } from "./MyFirstSection.schema";
+
+
+export function MyFirstSection({cms}: {cms: MyFirstSectionCms}) {
     return (
-      <p> Hello, my name is {cms.howdy} </p>
+      <Container container={cms.container}>
+        <p>Hello!!!</p>
+      </Container>
     );
   }
   
   MyFirstSection.displayName = 'My First Section'
-  // Section Customizer Schema
-  MyFirstSection.Schema = {
-    label: 'My First Section',
-    key: 'myFirstSection',
-    fields: [
-      {
-        name: 'howdy',
-        component: 'text',
-        label: 'Howdy Label',
-      }
-    ]
-  }  
+  MyFirstSection.Schema = Schema;
