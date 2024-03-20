@@ -41,7 +41,8 @@ export async function loader({context, params}: LoaderFunctionArgs) {
 
 export default function PageRoute() {
   const {page} = useLoaderData<typeof loader>();
-
+  console.log('-----page console log-----');
+  console.log(page);
   return (
     <div data-comp={PageRoute.displayName}>
       <RenderSections content={page} />
