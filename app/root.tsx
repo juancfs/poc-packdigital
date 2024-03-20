@@ -128,6 +128,7 @@ export async function loader({context, request}: LoaderFunctionArgs) {
 export default function App() {
   return (
     <Document>
+      <h2>hey!</h2>
       <Outlet />
     </Document>
   );
