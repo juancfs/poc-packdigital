@@ -1,7 +1,7 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 
-import type {ContainerSettings} from '~/settings/container';
-import type {LinkCms} from '~/lib/types';
+import type { ContainerSettings } from '~/settings/container';
+import type { LinkCms } from '~/lib/types';
 
 interface Section {
   aboveTheFold: boolean;
